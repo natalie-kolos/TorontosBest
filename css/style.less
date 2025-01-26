@@ -1,0 +1,169 @@
+// main: style.less
+
+@import "vars";
+@import url('https://fonts.googleapis.com/css2?family=Moul&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: @font-secondary;
+
+}
+
+p {
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+a {
+  font-weight: 700;
+  text-decoration: none;
+  color: @primary;
+  transition: @transition;
+
+  &:hover {
+    color: @secondary;
+  }
+
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: @font-primary;
+  font-weight: 400;
+}
+
+.container-fluid-custom {
+  padding-left: 80px;
+  padding-right: 80px;
+
+  @media @breakpoint-tablet-xl {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+.btn-custom {
+  padding: 5px 18px 7px 18px;
+  border-radius: @border-radius-sm;
+  transition: @transition;
+  font-family: @font-primary;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.4px;
+  text-transform: capitalize;
+  flex-shrink: 0;
+
+  @media @breakpoint-tablet-xl {
+    font-size: 18px;
+  }
+
+  @media @breakpoint-mobile {
+    font-size: 16px;
+  }
+
+
+
+  &.btn-custom__primary {
+    color: @text-primary;
+    background-color: @primary;
+    transition: @transition;
+
+
+    &:hover {
+      color: @text-primary;
+      background-color: @primary;
+      border-color: @primary;
+    }
+  }
+
+  &.btn-custom__secondary {
+    color: @primary;
+    background-color: @secondary;
+    transition: @transition;
+
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  &.btn-custom__outline__primary {
+    background-color: transparent;
+    color: @primary;
+    border: 1px solid @primary;
+
+
+    &:hover {
+      opacity: .8;
+
+    }
+  }
+
+  &.btn-custom__outline__secondary {
+    background-color: transparent;
+    color: @secondary;
+    border: 1px solid @secondary;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+
+  &.btn-custom-text {
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0;
+    color: @font-primary;
+    font-family: @font-primary;
+
+    s &:hover {
+      border: 0;
+      opacity: 0.8;
+    }
+
+    &:active {
+      border: 0;
+    }
+  }
+}
+
+.btn-outline-light {
+  .bi-search {
+    &::before {
+      color: @primary;
+    }
+  }
+}
+
+.navbar {
+  .navbar-brand{
+    color: @dark;
+    font-family: Moul;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    letter-spacing: -4px;
+    margin-bottom: 24px;
+    margin-right: 0;
+
+    span{
+      background: @secondary;
+      padding: 4px 16px 0px;
+      font-size: 34px;
+    }
+    
+  }
+  .navbar-custom{
+    width: 100%;
+      border-bottom: 1px solid #D8D8D8;
+      padding: 0 72px 24px;
+  }
+}
