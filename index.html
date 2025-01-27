@@ -14,49 +14,57 @@
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>
     <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="d-flex flex-column w-100 align-items-center">
-              <a class="navbar-brand" href="#">Toronto's <span>Best</span></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse navbar-custom" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Categories
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Food</a></li>
-                      <li><a class="dropdown-item" href="#">Another</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">About the Project</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Advertise</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                  </li>
-                  
-                </ul>
-                <form class="d-flex" role="search">
-                 
-                  <div class="input-group input-group-search">
-                    <input type="search" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2"><img src="img/icon-search.svg" alt=""></button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </nav>
+      <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid d-flex flex-row flex-lg-column">
+      <!-- Brand -->
+      
+        <a class="navbar-brand" href="#">Toronto's <span>Best</span></a>
+      
+      <!-- Toggler for Mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Offcanvas (Shared Menu) -->
+      <div class="offcanvas offcanvas-start offcanvas-lg navbar-custom" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Categories
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Food</a></li>
+                <li><a class="dropdown-item" href="#">Another</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">About the Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Advertise</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+      
+        
 
     </header>
     <main>
 <section class="section-custom">
-  <div class="container">
+  <div class="container-fluid container-fluid-custom">
 
   
   <div class="section-custom-title">
@@ -66,20 +74,22 @@
     <div class="row">
       <div class="col-lg-6">
         <article class="article-card article-card-lg">
-          <img class="img-fluid" src="https://placehold.co/870x460" srcset="https://placehold.co/870x460 1x, https://placehold.co/1740x920 2x">
-          
+          <a href="#">
+          <img class="img-fluid article-img" src="https://placehold.co/870x660" srcset="https://placehold.co/870x660 1x, https://placehold.co/1740x1220 2x">
+        </a>
           <div class="meta">
             <div class="tag-block">
               <a href="#" class="tag">Food</a>
+              
             </div>
             <div class="meta-info">
               <span class="card-views"><img src="img/icon-date.svg" alt="Date">2025-01-26</span>
               <span class="card-date"><img src="img/icon-eye.svg" alt="Views"> 375984758</span>
             </div>
-            
           </div>
           <h2>Discover Toronto’s culinary gems</h2>
-          <p>From trendy cafes to cozy family-run restaurants – we’ll guide you to the best breakfasts, lunches, and dinners in town.</p>
+          <p>Hipster ipsum tattooed brunch I'm baby. Hell yes hipster pok tofu drinking poke on fingerstache asymmetrical. Kitsch tofu out normcore microdosing fam ennui wolf. Cloud dreamcatcher tonx tofu distillery. Jomo pok venmo chia locavore salvia chips humblebrag. Bag beer chicharrones raclette af disrupt fanny vinegar.
+            </p>
                <a href="#" class="btn btn-custom btn-text">Read more <img src="img/icon-arrow.svg" alt="arrow-right"></a>  
           </article>
       </div>
@@ -87,24 +97,49 @@
     <div class="col-lg-6">
       <div class="row">
         <div class="col-lg-6">
-          <article class="article-card">
-            <img class="img-fluid" src="https://placehold.co/870x460" srcset="https://placehold.co/870x460 1x, https://placehold.co/1740x920 2x">
-            
+          <article class="article-card article-card-md">
+            <a href="#">
+            <img class="img-fluid article-img" src="https://placehold.co/870x460" srcset="https://placehold.co/870x460 1x, https://placehold.co/1740x920 2x">
+          </a>
             <div class="meta">
               <div class="tag-block">
-                <a href="#">Food</a>
+                <a href="#" class="tag">Food</a>
+                
               </div>
               <div class="meta-info">
                 <span class="card-views"><img src="img/icon-date.svg" alt="Date">2025-01-26</span>
                 <span class="card-date"><img src="img/icon-eye.svg" alt="Views"> 375984758</span>
               </div>
-              
             </div>
             <h2>Discover Toronto’s culinary gems</h2>
             <p>From trendy cafes to cozy family-run restaurants – we’ll guide you to the best breakfasts, lunches, and dinners in town.</p>
                  <a href="#" class="btn btn-custom btn-text">Read more <img src="img/icon-arrow.svg" alt="arrow-right"></a>  
             </article>
+            <article class="article-card article-card-md">
+            <a href="#">
+              <img class="img-fluid article-img" src="https://placehold.co/870x460" srcset="https://placehold.co/870x460 1x, https://placehold.co/1740x920 2x">
+            </a>
+              <div class="meta">
+                <div class="tag-block">
+                  <a href="#" class="tag">Food</a>
+                  
+                </div>
+                <div class="meta-info">
+                  <span class="card-views"><img src="img/icon-date.svg" alt="Date">2025-01-26</span>
+                  <span class="card-date"><img src="img/icon-eye.svg" alt="Views"> 375984758</span>
+                </div>
+              </div>
+              <h2>Discover Toronto’s culinary gems</h2>
+              <p>From trendy cafes to cozy family-run restaurants – we’ll guide you to the best breakfasts, lunches, and dinners in town.</p>
+                   <a href="#" class="btn btn-custom btn-text">Read more <img src="img/icon-arrow.svg" alt="arrow-right"></a>  
+              </article>
         </div>
+        <div class="col-lg-6">
+          <a href="#"><img class="img-fluid mb-3" src="https://placehold.co/330x400" srcset="https://placehold.co/330x400 1x, https://placehold.co/660x800 2x">
+          </a>
+          <a href="#"><img class="img-fluid mb-3" src="https://placehold.co/330x400" srcset="https://placehold.co/330x400 1x, https://placehold.co/660x800 2x">
+          </a>
+          
       </div>
     </div>
   </div>

@@ -1,11 +1,14 @@
 // main: style.less
 
 @import "vars";
-@import url('https://fonts.googleapis.com/css2?family=Moul&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Moul&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
   font-family: @font-secondary;
 
+}
+header{
+  margin-bottom: 40px;
 }
 
 p {
@@ -37,12 +40,16 @@ h6 {
 }
 
 .container-fluid-custom {
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 170px;
+  padding-right: 170px;
 
   @media @breakpoint-tablet-xl {
     padding-left: 24px;
     padding-right: 24px;
+  }
+  @media @breakpoint-mobile {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -116,15 +123,23 @@ h6 {
   }
 
 
-  &.btn-custom-text {
-    font-weight: 500;
-    font-size: 16px;
-    padding: 0;
-    color: @font-primary;
-    font-family: @font-primary;
+  &.btn-text {
+    color: @primary;
+font-family: @font-secondary;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 140%; /* 25.2px */
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 5px 0;
+    img{
+      margin-bottom: 0;
+    }
 
-    s &:hover {
-      border: 0;
+    &:hover {
+      border-color: transparent;
       opacity: 0.8;
     }
 
@@ -142,33 +157,58 @@ h6 {
   }
 }
 
+
+
 .navbar {
   .navbar-brand{
-    color: @dark;
-    font-family: Moul;
+    color: @text;
+    font-family: @font-brand;
     font-size: 64px;
     font-style: normal;
     font-weight: 400;
     line-height: normal; 
     letter-spacing: -4px;
-    margin-bottom: 24px;
+    margin-bottom: 0;
     margin-right: 0;
+    @media @breakpoint-tablet{
+      font-size: 40px;
+      letter-spacing: -2px;
+    }
+    @media @breakpoint-mobile{
+      font-size: 28px;
+      letter-spacing: 0;
+    }
 
     span{
       background: @secondary;
       padding: 4px 16px 0px;
       font-size: 34px;
+      @media @breakpoint-tablet{
+        font-size: 26px;
+      }
+      @media @breakpoint-mobile{
+        font-size: 20px;
+      }
     }
     
   }
   .navbar-custom{
-    width: 100%;
-      border-bottom: 1px solid #D8D8D8;
-      padding: 0 72px 24px;
+      @media @breakpoint-tablet-min{
+        width: 100%!important;
+        border-bottom: 1px solid #D8D8D8!important;
+        padding: 0 72px 24px;
       justify-content: center;
+      
+}
+.offcanvas-body {
+  @media @breakpoint-tablet-min{
+  justify-content: center;
+  }
+}
+      
       .nav-item {
         .nav-link{
-          color: @dark;
+          color: @text;
           font-family: @font-secondary;
           font-size: 16px;
           font-style: normal;
@@ -218,28 +258,105 @@ a{
 }
 
 .tag{
-  padding: 8px 14px;
+  padding: 7px 10px;
   background-color: @primary;
   color: @white;
-font-family: @font-primary;
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: 140%; /* 22.4px */
-letter-spacing: 1.92px;
-text-transform: uppercase;
+  font-family: @font-secondary;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 1.92px;
+  text-transform: uppercase;
+}
+
+.section-custom-title{
+  h3{
+    font-family: @font-brand;
+  }
 }
 
 .article-card{
-  &.article-card-lg{
-
+  .article-img{
+    margin-bottom: 24px;
   }
-  .meta-section{
+  
+  .meta{
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 16px;
+    img{
+      width: 18px;
+    }
+
+    .meta-info{
+    display: flex;
+    gap: 12px;
+    color: @text-light;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 25.6px */
+span{
+  display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    img{
+      margin-bottom: 0;
+    }
+}
+    }
+  }
+  h2{
+    color: @text;
+
+font-size: 26px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 44.8px */
+  }
+  p{
+    color: @text;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 28.8px */
   }
   .tag-block{
     display: flex;
     gap: 12px;
+  }
+
+  
+
+  &.article-card-md{
+    margin-bottom: 24px;
+.meta{
+  
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 12px;
+      
+      img{
+        width: 15px;
+      }
+}
+.article-img{
+  margin-bottom: 16px;
+}
+h2{
+  font-size: 18px;
+}
+p{
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+.tag{
+  font-size: 11px;
+}
+
   }
 }
