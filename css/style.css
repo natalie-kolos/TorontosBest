@@ -417,6 +417,12 @@ h6 {
   gap: 12px;
   margin-bottom: 16px;
 }
+.section-custom-title.section-custom-title-sm {
+  margin-bottom: 8px;
+}
+.section-custom-title.section-custom-title-sm h3 {
+  font-size: 16px;
+}
 .section-custom-title hr {
   width: 100%;
 }
@@ -499,6 +505,14 @@ h6 {
 }
 .article-card.article-card-md .tag {
   font-size: 11px;
+}
+.article-card.article-card-sm {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.article-card.article-card-sm h2 {
+  font-size: 20px;
 }
 .cta {
   background-color: #1AB9F1;
