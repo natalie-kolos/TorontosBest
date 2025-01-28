@@ -222,40 +222,39 @@ h6 {
   }
 }
 .btn-custom {
-  padding: 5px 18px 7px 18px;
+  padding: 9px 18px 9px 18px;
   border-radius: 0;
   transition: all 0.4s ease-in-out;
   font-family: "Arvo", serif;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
   letter-spacing: 0.4px;
-  text-transform: capitalize;
   flex-shrink: 0;
 }
 @media (max-width: 1199px) {
   .btn-custom {
-    font-size: 18px;
+    font-size: 14px;
   }
 }
 @media (max-width: 767px) {
   .btn-custom {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 .btn-custom.btn-custom__primary {
-  color: #1AB9F1;
+  color: #fff;
   background-color: #1AB9F1;
   transition: all 0.4s ease-in-out;
 }
 .btn-custom.btn-custom__primary:hover {
-  color: #1AB9F1;
-  background-color: #1AB9F1;
-  border-color: #1AB9F1;
+  color: #000000;
+  background-color: #FDEF06;
+  border-color: #FDEF06;
 }
 .btn-custom.btn-custom__secondary {
-  color: #1AB9F1;
+  color: #000000;
   background-color: #FDEF06;
   transition: all 0.4s ease-in-out;
 }
@@ -272,7 +271,7 @@ h6 {
 }
 .btn-custom.btn-custom__outline__secondary {
   background-color: transparent;
-  color: #FDEF06;
+  color: #000000;
   border: 1px solid #FDEF06;
 }
 .btn-custom.btn-custom__outline__secondary:hover {
@@ -289,7 +288,7 @@ h6 {
   display: flex;
   align-items: center;
   gap: 4px;
-  padding: 5px 0;
+  padding: 10px 0;
 }
 .btn-custom.btn-text img {
   margin-bottom: 0;
@@ -344,7 +343,7 @@ h6 {
 }
 @media (min-width: 992px) {
   .navbar .navbar-custom {
-    width: 100%!important;
+    width: 100% !important;
     border-bottom: 1px solid #D8D8D8 !important;
     padding: 0 72px 24px;
     justify-content: center;
@@ -409,8 +408,21 @@ h6 {
   letter-spacing: 1.92px;
   text-transform: uppercase;
 }
+.section-custom {
+  margin-bottom: 40px;
+}
+.section-custom-title {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.section-custom-title hr {
+  width: 100%;
+}
 .section-custom-title h3 {
   font-family: "Moul", serif;
+  white-space: nowrap;
 }
 .article-card .article-img {
   margin-bottom: 24px;
@@ -487,4 +499,131 @@ h6 {
 }
 .article-card.article-card-md .tag {
   font-size: 11px;
+}
+.cta {
+  background-color: #1AB9F1;
+  padding: 56px 80px;
+  margin: 56px 0;
+}
+@media (max-width: 991px) {
+  .cta {
+    padding: 32px 40px;
+    margin: 16px 0;
+  }
+}
+.cta h3 {
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  margin-bottom: 32px;
+  text-align: center;
+  font-family: "Moul", serif;
+}
+.cta form .form-control {
+  background: transparent;
+  border-color: white;
+  color: white;
+  border-radius: 0;
+}
+.cta form .form-control::placeholder {
+  color: #fff;
+}
+.cta form .form-text {
+  color: #fff;
+  opacity: 0.8;
+  margin-top: 6px;
+}
+.cta form .form-text a {
+  color: #fff;
+}
+.cta form .form-text a:hover {
+  color: #FDEF06;
+}
+.cta form .btn-custom__secondary:hover {
+  background-color: #fff;
+  opacity: 1;
+}
+footer {
+  background-color: #F4F4F4;
+}
+footer .footer-inner {
+  display: flex;
+  align-items: center;
+  gap: 44px;
+  justify-content: center;
+  padding: 24px 0;
+}
+@media (max-width: 1440px) {
+  footer .footer-inner {
+    gap: 0px;
+    flex-direction: column;
+  }
+}
+footer .footer-inner .nav-custom .nav-item .nav-link {
+  color: #000000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0.36px;
+}
+footer .footer-bottom {
+  text-align: center;
+  border-top: 1px solid var(--Line, #DBD2C9);
+  padding: 22px 10px;
+}
+footer .footer-bottom p {
+  color: #18212B;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 100%;
+  margin-bottom: 0;
+}
+footer .footer-bottom p a {
+  color: #18212B;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+.socials {
+  display: flex;
+  align-items: center;
+  padding: 22px 10px;
+  gap: 12px;
+}
+.socials h4 {
+  color: #1AB9F1;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  /* 18px */
+  letter-spacing: 0.36px;
+  margin-bottom: 0;
+}
+.socials .social-icons {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 0;
+}
+.socials .social-icons li {
+  background-color: #1AB9F1;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-bottom: 0;
+}
+.socials .social-icons li:hover {
+  opacity: 0.9;
+}
+.socials .social-icons li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
